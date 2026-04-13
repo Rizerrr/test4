@@ -731,7 +731,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "maps.kaguya.sbs",
+              "address": "mts.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -1873,7 +1873,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "maps.kaguya.sbs",
+              "address": "mts.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -3015,7 +3015,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "maps.kaguya.sbs",
+              "address": "mts.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -4650,7 +4650,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "maps.kaguya.sbs",
+              "address": "mts.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -8774,7 +8774,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "neruk.kaguya.sbs",
+              "address": "neru.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -8826,58 +8826,6 @@
         "settings": {
           "vnext": [
             {
-              "address": "neru.kaguya.sbs",
-              "port": 443,
-              "users": [
-                {
-                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "apple.com",
-            "publicKey": "i3xg5OZqqQp0w3Bb6jB_0RAJ2-5Ds2yEa4xca5zEax4",
-            "shortId": "dc4aa6635008a9ae",
-            "fingerprint": "chrome"
-          }
-        }
-      },
-      {
-        "protocol": "freedom",
-        "tag": "direct"
-      },
-      {
-        "protocol": "blackhole",
-        "tag": "block"
-      }
-    ]
-  },
-  {
-    "remarks": "🇳🇱 Нидерланды 5",
-    "inbounds": [
-      {
-        "port": 10808,
-        "listen": "127.0.0.1",
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        }
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "proxy",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
               "address": "cdn.deploy-assure.ru",
               "port": 443,
               "users": [
@@ -8906,7 +8854,7 @@
     ]
   },
   {
-    "remarks": "🇳🇱 Нидерланды 6",
+    "remarks": "🇳🇱 Нидерланды 5",
     "inbounds": [
       {
         "port": 10808,
@@ -8952,7 +8900,7 @@
     ]
   },
   {
-    "remarks": "🇳🇱 Нидерланды 7",
+    "remarks": "🇳🇱 Нидерланды 6",
     "inbounds": [
       {
         "port": 10808,
@@ -9016,7 +8964,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "nor.kaguya.sbs",
+              "address": "nors.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -9051,6 +8999,58 @@
   },
   {
     "remarks": "🇳🇴 Норвегия 2",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "nork.kaguya.sbs",
+              "port": 443,
+              "users": [
+                {
+                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "nor.kaguya.sbs",
+            "publicKey": "KfrkzBTCeNkfAK2nBrB8_7ctJ7ysihV6OxZv-0loWzQ",
+            "shortId": "",
+            "fingerprint": "chrome"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇳🇴 Норвегия 3",
     "inbounds": [
       {
         "port": 10808,
