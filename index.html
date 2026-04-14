@@ -38,8 +38,8 @@
     "burstObservatory": {
       "pingConfig": {
         "timeout": "2s",
-        "interval": "10s",
-        "sampling": 2,
+        "interval": "1000000000s",
+        "sampling": 1,
         "httpMethod": "GET",
         "destination": "https://web.telegram.org"
       },
@@ -731,7 +731,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -1180,8 +1180,8 @@
     "burstObservatory": {
       "pingConfig": {
         "timeout": "2s",
-        "interval": "10s",
-        "sampling": 2,
+        "interval": "100000000s",
+        "sampling": 1,
         "httpMethod": "GET",
         "destination": "https://www.tiktok.com/"
       },
@@ -1873,7 +1873,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -2322,8 +2322,8 @@
     "burstObservatory": {
       "pingConfig": {
         "timeout": "2s",
-        "interval": "10s",
-        "sampling": 2,
+        "interval": "60000s",
+        "sampling": 1,
         "httpMethod": "GET",
         "destination": "https://www.instagram.com/"
       },
@@ -3015,7 +3015,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -3426,7 +3426,7 @@
     ]
   },
   {
-    "remarks": "=== ↓ ОБХОДЫ ↓ === 13.04",
+    "remarks": "=== ↓ ОБХОДЫ ↓ === 14.04",
     "inbounds": [
       {
         "port": 10808,
@@ -4650,7 +4650,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -6558,6 +6558,58 @@
         "settings": {
           "vnext": [
             {
+              "address": "limb.kaguya.sbs",
+              "port": 443,
+              "users": [
+                {
+                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "apple.com",
+            "publicKey": "kfTA5H4IxvRJiA2sIkJpCGgEHms3ppBokV32K4V26lo",
+            "shortId": "dc4aa6635008a9ae",
+            "fingerprint": "chrome"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇩🇪 Германия 5",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "geru.kaguya.sbs",
               "port": 443,
               "users": [
@@ -6592,7 +6644,7 @@
     ]
   },
   {
-    "remarks": "🇩🇪 Германия 5",
+    "remarks": "🇩🇪 Германия 6",
     "inbounds": [
       {
         "port": 10808,
@@ -6638,52 +6690,6 @@
     ]
   },
   {
-    "remarks": "🇩🇪 Германия 6",
-    "inbounds": [
-      {
-        "port": 10808,
-        "listen": "127.0.0.1",
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        }
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "proxy",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
-              "address": "ger-13.anti-vpn.ru",
-              "port": 52006,
-              "users": [
-                {
-                  "id": "af6b7f2f-6d90-03e8-80c1-bed2faeabcfa",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "tls"
-        }
-      },
-      {
-        "protocol": "freedom",
-        "tag": "direct"
-      },
-      {
-        "protocol": "blackhole",
-        "tag": "block"
-      }
-    ]
-  },
-  {
     "remarks": "🇩🇪 Германия 7",
     "inbounds": [
       {
@@ -6702,7 +6708,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "germ-dop.anti-vpn.ru",
+              "address": "ger-13.anti-vpn.ru",
               "port": 52006,
               "users": [
                 {
@@ -6748,6 +6754,52 @@
         "settings": {
           "vnext": [
             {
+              "address": "germ-dop.anti-vpn.ru",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-03e8-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇩🇪 Германия 9",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "ger-13.anti-vpn.ru",
               "port": 52006,
               "users": [
@@ -6776,7 +6828,7 @@
     ]
   },
   {
-    "remarks": "🇩🇪 Германия 9",
+    "remarks": "🇩🇪 Германия 10",
     "inbounds": [
       {
         "port": 10808,
@@ -7322,6 +7374,58 @@
         "settings": {
           "vnext": [
             {
+              "address": "fink.kaguya.sbs",
+              "port": 443,
+              "users": [
+                {
+                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "apple.com",
+            "publicKey": "E3p-T8sCvanHEFDkYXfajArxu8jMEtYKK59N_R1FtnE",
+            "shortId": "dc4aa6635008a9ae",
+            "fingerprint": "chrome"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇫🇮 Финляндия 5",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "rufin.kaguya.sbs",
               "port": 443,
               "users": [
@@ -7356,7 +7460,7 @@
     ]
   },
   {
-    "remarks": "🇫🇮 Финляндия 5",
+    "remarks": "🇫🇮 Финляндия 6",
     "inbounds": [
       {
         "port": 10808,
@@ -7402,7 +7506,7 @@
     ]
   },
   {
-    "remarks": "🇫🇮 Финляндия 6",
+    "remarks": "🇫🇮 Финляндия 7",
     "inbounds": [
       {
         "port": 10808,
@@ -7448,7 +7552,7 @@
     ]
   },
   {
-    "remarks": "🇫🇮 Финляндия 7",
+    "remarks": "🇫🇮 Финляндия 8",
     "inbounds": [
       {
         "port": 10808,
@@ -7494,7 +7598,7 @@
     ]
   },
   {
-    "remarks": "🇫🇮 Финляндия 8",
+    "remarks": "🇫🇮 Финляндия 9",
     "inbounds": [
       {
         "port": 10808,
@@ -8526,6 +8630,58 @@
         "settings": {
           "vnext": [
             {
+              "address": "lituva.kaguya.sbs",
+              "port": 443,
+              "users": [
+                {
+                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "apple.com",
+            "publicKey": "0kjN_wTcYu-tvTA-N71TUrqGT1d_a_CGCTqeQbmTwAU",
+            "shortId": "dc4aa6635008a9ae",
+            "fingerprint": "chrome"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇱🇹 Литва 4",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "cmm-13.anti-vpn.ru",
               "port": 52006,
               "users": [
@@ -8774,7 +8930,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "neruk.kaguya.sbs",
+              "address": "neru.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -8826,58 +8982,6 @@
         "settings": {
           "vnext": [
             {
-              "address": "neru.kaguya.sbs",
-              "port": 443,
-              "users": [
-                {
-                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
-                  "encryption": "none",
-                  "flow": "xtls-rprx-vision"
-                }
-              ]
-            }
-          ]
-        },
-        "streamSettings": {
-          "network": "tcp",
-          "security": "reality",
-          "realitySettings": {
-            "serverName": "apple.com",
-            "publicKey": "i3xg5OZqqQp0w3Bb6jB_0RAJ2-5Ds2yEa4xca5zEax4",
-            "shortId": "dc4aa6635008a9ae",
-            "fingerprint": "chrome"
-          }
-        }
-      },
-      {
-        "protocol": "freedom",
-        "tag": "direct"
-      },
-      {
-        "protocol": "blackhole",
-        "tag": "block"
-      }
-    ]
-  },
-  {
-    "remarks": "🇳🇱 Нидерланды 5",
-    "inbounds": [
-      {
-        "port": 10808,
-        "listen": "127.0.0.1",
-        "protocol": "socks",
-        "settings": {
-          "udp": true
-        }
-      }
-    ],
-    "outbounds": [
-      {
-        "tag": "proxy",
-        "protocol": "vless",
-        "settings": {
-          "vnext": [
-            {
               "address": "cdn.deploy-assure.ru",
               "port": 443,
               "users": [
@@ -8906,7 +9010,7 @@
     ]
   },
   {
-    "remarks": "🇳🇱 Нидерланды 6",
+    "remarks": "🇳🇱 Нидерланды 5",
     "inbounds": [
       {
         "port": 10808,
@@ -8952,7 +9056,7 @@
     ]
   },
   {
-    "remarks": "🇳🇱 Нидерланды 7",
+    "remarks": "🇳🇱 Нидерланды 6",
     "inbounds": [
       {
         "port": 10808,
@@ -9016,7 +9120,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "nors.kaguya.sbs",
+              "address": "nork.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -9218,6 +9322,58 @@
         "settings": {
           "vnext": [
             {
+              "address": "polska.kaguya.sbs",
+              "port": 443,
+              "users": [
+                {
+                  "id": "e0e8cb01-bfa7-4587-bc74-2eeacf703f03",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "reality",
+          "realitySettings": {
+            "serverName": "apple.com",
+            "publicKey": "IViLzWb8rAQzM4abtepScxmcCi1EbYxLh0tP3glKzVU",
+            "shortId": "dc4aa6635008a9ae",
+            "fingerprint": "chrome"
+          }
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇵🇱 Польша 3",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "rupl.kaguya.sbs",
               "port": 443,
               "users": [
@@ -9252,7 +9408,7 @@
     ]
   },
   {
-    "remarks": "🇵🇱 Польша 3",
+    "remarks": "🇵🇱 Польша 4",
     "inbounds": [
       {
         "port": 10808,
@@ -9304,7 +9460,7 @@
     ]
   },
   {
-    "remarks": "🇵🇱 Польша 4",
+    "remarks": "🇵🇱 Польша 5",
     "inbounds": [
       {
         "port": 10808,
@@ -9350,7 +9506,7 @@
     ]
   },
   {
-    "remarks": "🇵🇱 Польша 5",
+    "remarks": "🇵🇱 Польша 6",
     "inbounds": [
       {
         "port": 10808,
@@ -9396,7 +9552,7 @@
     ]
   },
   {
-    "remarks": "🇵🇱 Польша 6",
+    "remarks": "🇵🇱 Польша 7",
     "inbounds": [
       {
         "port": 10808,
