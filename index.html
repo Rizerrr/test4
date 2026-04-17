@@ -615,7 +615,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -1670,7 +1670,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -2725,7 +2725,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -4181,7 +4181,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "mts.kaguya.sbs",
+              "address": "maps.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -6089,7 +6089,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "limb.kaguya.sbs",
+              "address": "lamb.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -6383,11 +6383,11 @@
         "settings": {
           "vnext": [
             {
-              "address": "cluster-de-1.firstvideocdn.ru",
+              "address": "82.202.197.68",
               "port": 52006,
               "users": [
                 {
-                  "id": "af6b7f2f-6d90-01f4-80c1-bed2faeabcfa",
+                  "id": "af6b7f2f-6d90-03e8-80c1-bed2faeabcfa",
                   "encryption": "none",
                   "flow": "xtls-rprx-vision"
                 }
@@ -6429,7 +6429,191 @@
         "settings": {
           "vnext": [
             {
+              "address": "80.93.187.3",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-03e8-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇩🇪 Германия 11",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "cluster-de-1.firstvideocdn.ru",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-01f4-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇩🇪 Германия 12",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
               "address": "cluster-de-2.firstvideocdn.ru",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-01f4-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇩🇪 Германия 13",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "82.202.197.68",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-01f4-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇩🇪 Германия 14",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "80.93.187.3",
               "port": 52006,
               "users": [
                 {
@@ -7182,6 +7366,98 @@
   },
   {
     "remarks": "🇫🇮 Финляндия 9",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "82.202.197.152",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-0bb8-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇫🇮 Финляндия 10",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "82.202.197.2",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-0bb8-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇫🇮 Финляндия 11",
     "inbounds": [
       {
         "port": 10808,
@@ -8905,7 +9181,7 @@
         "settings": {
           "vnext": [
             {
-              "address": "poleska.kaguya.sbs",
+              "address": "polska.kaguya.sbs",
               "port": 443,
               "users": [
                 {
@@ -9154,6 +9430,98 @@
           "vnext": [
             {
               "address": "cluster-de-2.firstvideocdn.ru",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-2710-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇵🇱 Польша 8",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "82.202.197.152",
+              "port": 52006,
+              "users": [
+                {
+                  "id": "af6b7f2f-6d90-2710-80c1-bed2faeabcfa",
+                  "encryption": "none",
+                  "flow": "xtls-rprx-vision"
+                }
+              ]
+            }
+          ]
+        },
+        "streamSettings": {
+          "network": "tcp",
+          "security": "tls"
+        }
+      },
+      {
+        "protocol": "freedom",
+        "tag": "direct"
+      },
+      {
+        "protocol": "blackhole",
+        "tag": "block"
+      }
+    ]
+  },
+  {
+    "remarks": "🇵🇱 Польша 9",
+    "inbounds": [
+      {
+        "port": 10808,
+        "listen": "127.0.0.1",
+        "protocol": "socks",
+        "settings": {
+          "udp": true
+        }
+      }
+    ],
+    "outbounds": [
+      {
+        "tag": "proxy",
+        "protocol": "vless",
+        "settings": {
+          "vnext": [
+            {
+              "address": "82.202.197.2",
               "port": 52006,
               "users": [
                 {
